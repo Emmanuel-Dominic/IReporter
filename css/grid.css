@@ -1,0 +1,88 @@
+
+
+
+@media only screen and (min-width: 600px){
+
+	.container{
+		display: grid;
+		text-align: center;
+		grid-template-columns: repeat(12,1fr);
+		grid-template-rows: repeat(10,10%);
+		grid-template-areas: "header header header header header header header header header header header header"
+							 "nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar"
+							 "sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar"
+							 "main main main main main main main main main main main main"
+							 "main main main main main main main main main main main main"
+							 "main main main main main main main main main main main main"
+							 "main main main main main main main main main main main main"
+							 "main main main main main main main main main main main main"
+							 "main main main main main main main main main main main main"
+							 "footer footer footer footer footer footer footer footer footer footer footer footer"
+							 ;
+	}
+
+
+	.main{
+		background-color: rgb(0,0,0,0.7);
+		grid-area: main;
+		padding: 2%;
+	}
+
+	.nav-bar{
+		background-color: rgb(0,0,0,0.2);
+		grid-area: nav-bar;
+		padding: 5%;
+
+	}
+
+
+	.footer{
+		background-color: rgb(0,0,0,0.9);
+		grid-area: footer;
+		padding: 5%;
+	}
+
+	.header{
+		background-color: rgb(0,0,0,1);
+		grid-area: header;
+		padding: 5%;
+	}
+
+	.sidebar{
+		grid-area: sidebar;
+		padding: 5%;
+	}
+
+
+
+}
+
+
+.content{
+	display: grid;
+	grid-template-columns: ;
+	grid-template-rows: ;
+	grid-template-areas: ;
+}
+
+.head{
+	grid-area: ;
+}
+
+.topnav{
+	grid-area: ;
+}
+
+.side{
+	grid-area: ;
+}
+
+.foot{
+	grid-area: ;
+}
+
+.layout{
+	grid-area: ;
+}
+
+
