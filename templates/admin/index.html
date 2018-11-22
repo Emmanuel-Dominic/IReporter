@@ -4,12 +4,13 @@
 	<title>Index</title>
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/grid.css">
-	<!-- <script src="../../js/script.js"> -->
+	<script src="../../js/script.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="header">
-		<h1>I-REPORT</h1>
+			<p style="color:rgb(124,252,0)">&#9784;</p>
+			<h1><span style="color:rgb(124,252,0)">&#8465;&#8477;&#8455;</span>PORT<span style="color:rgb(124,252,0)">&#8455;&#8477;</span></h1>
 		</div>
 		<div class="nav-bar">
 			<nav>
@@ -21,16 +22,43 @@
 			</nav>
 		</div>
 		<div class="sidebar">
-			<h2>Welcome To IReport</h2>
+			<h2>Welcome To IReporter</h2>
 		</div>
 		<div class="main">
 			<form class="signup">
-				<h2>Admin-Login</h2>
-				<input type="text" name="" placeholder="Enter Name" required="Name">
-				<input type="text" name="" placeholder="Enter Password" required="Password">
-				<br>
-				<input href="#"  type="" value="Submit" name="" class="button">
-			</form>
+			    <div class="row">
+			      <div class="col-25">
+			        <label for="">Email</label>
+			      </div>
+			      <div class="col-75">
+			        <input type="text" placeholder="Enter Your Email">
+			      </div>
+			    </div>
+			    <div class="row">
+			      <div class="col-25">
+			        <label for="">Password</label>
+			      </div>
+			      <div class="col-75">
+			        <input type="text" placeholder="Enter Your Password">
+			      </div>
+			    </div>
+			    <div class="row">
+			      <div class="col-25">
+			        <label for="country">Country</label>
+			      </div>
+			      <div class="col-75">
+			        <select id="country" name="country">
+			          <option value="australia">Australia</option>
+			          <option value="canada">Canada</option>
+			          <option value="usa">USA</option>
+			        </select>
+			      </div>
+			    </div>
+			    <br>
+			    <div class="row">
+			      <a href="dashboard.html"  type="" name="" class="button">Submit</a>
+			    </div>
+			</form>    
 		</div>
 		<div class="footer">
 			<p>Copyright@Manuel</p><a href="#">Andelaug.com</a>

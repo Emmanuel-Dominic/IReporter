@@ -4,20 +4,33 @@
 	<title>Admin</title>
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/grid.css">
+	<script src="../../js/script.js"></script>
 </head>
 <body>
-	<div id="googleMap" style="width:100%;height:500px;"></div>
-
-<script>
-function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(0.342500,32.588889),
-    zoom:10,
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
-
+	<div class="container">
+		<div class="header">
+			<p style="color:rgb(124,252,0)">&#9784;</p>
+			<h1><span style="color:rgb(124,252,0)">&#8465;&#8477;&#8455;</span>PORT<span style="color:rgb(124,252,0)">&#8455;&#8477;</span></h1>
+		</div>
+		<div class="nav-bar">
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Red-form</a></li>
+					<li><a href="#">Interven-form</a></li>
+					<li><a href="#">LogOut</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="sidebar">
+			<h2>Welcome To IReporter</h2>
+		</div>
+		<div class="main" id="googleMap" style="width:100%;height:500px;">
+		</div>
+		<div class="footer">
+			 <p>Copyright@Manuel</p><a href="#">Andelaug.com</a>
+		</div>
+	</div>
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>
 </html>

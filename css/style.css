@@ -38,7 +38,7 @@ li a:hover:not(.active) {
 }
 
 form{
-    border: 1px solid;
+
 }
 
 .login{
@@ -46,9 +46,12 @@ form{
 }
 
 .signup{
-    width: 70%;
-    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
     padding: 15px;
+    width: 80%;
+    border: 1px solid;
+    margin: auto;
 }
 
 input[type='search'] {
@@ -65,14 +68,45 @@ input[type='search']:focus {
     width: 40%;
 }
 
-input{
-    width: 75%;
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    border:1px solid;
-    height: 39px;
-    text-align: center;
-    padding: 8px;
-    margin: 1%;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-70 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text{
+    font-size: 22px;
+    font-weight: bolder;
 }
 
 input[class="btn"]{
@@ -86,7 +120,7 @@ input[class="btn"]{
 }
 
 .button{
-    background: rgb(255,215,0);
+    background: rgb(0,255,255);
     width: 20%;
     border-radius: 4px;
     height: 39px;
@@ -94,6 +128,17 @@ input[class="btn"]{
     cursor: pointer;
     padding: 10px;
     margin: 10px;
+}
+
+.view{
+    background: rgb(0,255,255);
+    width: 100%;
+    border-radius: 4px;
+    height: 39px;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px;
+    margin: auto;
 }
 
 .admin{
@@ -104,7 +149,10 @@ input[class="btn"]{
     text-align: center;
     cursor: pointer;
     padding: 10px;
-    margin: 10px;
+    margin: 0;
+}
+.div{
+    display: inline-block;
 }
 
 input[type="radio"]{
@@ -115,29 +163,6 @@ input[type="radio"]{
     padding-left: 37px;
 }
 
-output{
-    border-radius: 4px;
-    box-sizing: border-box;
-    height: 50px;
-    margin: 10px;
-    padding-left: 37px;
-}
-
-label{
-    border-radius: 4px;
-    box-sizing: border-box;
-    height: 50px;
-    margin: 10px;
-    padding-left: 37px;
-}
-
-select{
-    border-radius: 4px;
-    box-sizing: border-box;
-    height: 50px;
-    margin: 10px;
-    padding-left: 37px;
-}
 
 
 .button-success {
@@ -175,14 +200,14 @@ table{
 }
 
 th, td, tr{
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
   text-align: center;
   padding: 8px;
   background-color: screen;
 }
 
 th{
-  background-color: rgb(0,255,255);
+  background-color: rgb(124,252,0);
   color: white;
 }
 
@@ -218,32 +243,38 @@ p{
 
 
     .main{
-            grid-area: main;
-            padding: 2%;
-        }
+        grid-area: main;
+        padding: 1%;
+    }
 
     .nav-bar{
         grid-area: nav-bar;
-        padding: 5%;
         display: inline-block;
 
     }
 
 
     .footer{
+        background-color: rgb(0,0,0,1);
+        color: white;
         grid-area: footer;
-        padding: 5%;
+        padding: 1%;
     }
 
     .header{
+        background-color: rgb(0,0,0,1);
+        color: white;
         grid-area: header;
-        padding: 5%;
     }
 
     .sidebar{
         grid-area: sidebar;
-        padding: 5%;
     }
+
+
+    .col-25, .col-70, input[type=submit] {
+        width: 95%;
+        margin-top: 0;
 
 }
 
@@ -270,29 +301,26 @@ p{
 
     .main{
         grid-area: main;
-        padding: 2%;
+        padding: 1%;
     }
 
     .nav-bar{
         grid-area: nav-bar;
-        padding: 5%;
 
     }
 
 
     .footer{
         grid-area: footer;
-        padding: 5%;
+        padding: 1%;
     }
 
     .header{
         grid-area: header;
-        padding: 5%;
     }
 
     .sidebar{
         grid-area: sidebar;
-        padding: 5%;
     }
 
 }
