@@ -37,8 +37,15 @@ li a:hover:not(.active) {
     background-color: gold;
 }
 
-form{
-
+.logout{
+    width: 12%;
+    background: rgb(0,255,255);
+    border-radius: 4px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    padding: 1%;
+    margin: 5px;
 }
 
 .login{
@@ -50,6 +57,7 @@ form{
     background-color: #f2f2f2;
     padding: 15px;
     width: 80%;
+    position: relative;
     border: 1px solid;
     margin: auto;
 }
@@ -68,17 +76,28 @@ input[type='search']:focus {
     width: 40%;
 }
 
-input[type=text], input[type=email], select, textarea {
+input[type=text], input[type=email], input[type=date], select, textarea {
     width: 100%;
     padding: 12px;
+    text-align: center;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
 }
 
+textarea{
+    width: 70%;
+}
+
+input.date{ 
+    width: 70%;
+    text-align: center;
+}
+
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+    font-weight: bold;
 }
 
 
@@ -164,36 +183,6 @@ input[type="radio"]{
 }
 
 
-
-.button-success {
-    background: rgb(28, 184, 65); /* this is a green */
-}
-
-.button-rejected {
-    background: rgb(202, 60, 60); /* this is a maroon */
-}
-
-.button-underinvest {
-    background: rgb(223, 117, 20); /* this is an orange */
-}
-
-.button-secondary {
-    background: rgb(66, 184, 221); /* this is a light blue */
-}
-
-.button-gold {
-    background: rgb(255,215,0); /* this is an gold */
-}
-
-.button-lawngreen {
-    background: rgb(124,252,0); /* this is a lawngreen */
-}
-
-.button-springgreen {
-    background: rgb(0,250,154); /* this is a medium spring green */
-}
-
-
 table{
   border-collapse: collapse;
   width: 100%;
@@ -224,105 +213,12 @@ p{
     text-align: center;
 }
 
-@media only screen and (max-width: 600px){
-
-    .container{
-        display: grid;
-        text-align: center;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(8,10%);
-        grid-template-areas: "header"
-                             "nav-bar"
-                             "sidebar"
-                             "main"
-                             "main"
-                             "main"
-                             "main"
-                             "footer";
-    }
-
-
-    .main{
-        grid-area: main;
-        padding: 1%;
-    }
-
-    .nav-bar{
-        grid-area: nav-bar;
-        display: inline-block;
-
-    }
-
-
-    .footer{
-        background-color: rgb(0,0,0,1);
-        color: white;
-        grid-area: footer;
-        padding: 1%;
-    }
-
-    .header{
-        background-color: rgb(0,0,0,1);
-        color: white;
-        grid-area: header;
-    }
-
-    .sidebar{
-        grid-area: sidebar;
-    }
-
-
-    .col-25, .col-70, input[type=submit] {
-        width: 95%;
-        margin-top: 0;
-
+.news{
+    margin: auto;
+    width: 70%;
+    padding: 1%;
 }
 
-@media only screen and (min-width: 600px){
-
-    .container{
-        display: grid;
-        text-align: center;
-        grid-template-columns: repeat(12,1fr);
-        grid-template-rows: repeat(10,10%);
-        grid-template-areas: "header header header header header header header header header header header header"
-                             "nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar"
-                             "sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar"
-                             "main main main main main main main main main main main main"
-                             "main main main main main main main main main main main main"
-                             "main main main main main main main main main main main main"
-                             "main main main main main main main main main main main main"
-                             "main main main main main main main main main main main main"
-                             "main main main main main main main main main main main main"
-                             "footer footer footer footer footer footer footer footer footer footer footer footer"
-                             ;
-    }
-
-
-    .main{
-        grid-area: main;
-        padding: 1%;
-    }
-
-    .nav-bar{
-        grid-area: nav-bar;
-
-    }
-
-
-    .footer{
-        grid-area: footer;
-        padding: 1%;
-    }
-
-    .header{
-        grid-area: header;
-    }
-
-    .sidebar{
-        grid-area: sidebar;
-    }
-
+.news > ul{
+    text-align: center;
 }
-
-

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Edit-form</title>
+	<title>Admin</title>
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/grid.css">
 	<script src="../../js/script.js"></script>
@@ -15,32 +15,21 @@
 		<div class="nav-bar">
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Red-form</a></li>
-					<li><a href="#">Interven-form</a></li>
-					<li><a href="#">LogOut</a></li>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="location.html">View-Map</a></li>
+					<a href="index.html"  type="" name="" class="logout" style="float: right;">LogOut</a>
 				</ul>
 			</nav>
 		</div>
 		<div class="sidebar">
-			<h2>Welcome To IReporter</h2>
+			<h2>MAP-LOCATOR</h2>
 		</div>
-		<div class="main">
-			<form class="signup">
-				<h2>Redflag-Form</h2>
-				<label>Crime</label>
-				<label>personIvoved</label>
-				<label>LocationPicker-lat/long</label>
-				<label>DatePicker</label>
-				<label>Description</label>
-				<br>
-				<br>
-				<a href="#"  type="" name="" class="button">Submit</a>
-			</form>
+		<div class="main" id="googleMap" style="width:100%;height:500px;">
 		</div>
 		<div class="footer">
-			<p>Copyright@Manuel</p><a href="#">Andelaug.com</a>
+			 <p>Copyright@Manuel</p><a href="#">Andelaug.com</a>
 		</div>
 	</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>
 </html>

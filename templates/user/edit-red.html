@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Write-form</title>
+	<title>Update-form</title>
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/grid.css">
 	<script src="../../js/script.js"></script>
@@ -14,16 +14,11 @@
 		</div>
 		<div class="nav-bar">
 			<nav>
-				<ul>
-					<li><a href="home.html">Home</a></li>
-					<li><a href="redflag-form.html">Redflag-Form</a></li>
-					<li><a href="intervetion-form.html">Intervestion-Form</a></li>
-					<a href="../../index.html"  type="" name="" class="logout" style="float: right;">LogOut</a>
-				</ul>
+				<h1 style="color: lightblue">Previous Report Review</h1>
 			</nav>
 		</div>
 		<div class="sidebar">
-			<h2>Welcome To IReporter</h2>
+			<h2>REDFLAG REPORT</h2>
 		</div>
 		<div class="main">
 			<form class="signup">
@@ -33,18 +28,18 @@
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label>Case Title</label>
+                        <label>Title</label>
                     </div>
                     <div class="col-70">
-                        <input type="text" name="" placeholder="Enter Title e.g, Theft">
+						<a type="" class="text" name="">Theft</a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label>Report To</label>
+						<label>Suspect</label>
                     </div>
                     <div class="col-70">
-                        <input type="text" name="" placeholder="Enter Concerned Management">
+                        <input type="text" class="date" name="" placeholder="Thomas">
                     </div>
                 </div>
                 <div class="row">
@@ -52,8 +47,8 @@
                         <label>Location</label>
                     </div>
                     <div class="col-70">
-                        <input type="text" name="" class="date" placeholder="Longtitude eg. 0.39987">
-                        <input type="text" name="" class="date" placeholder="Latitude eg. 9.7979">
+                        <input type="text" name="" class="date" placeholder="0.39987">
+                        <input type="text" name="" class="date" placeholder="9.7979">
                     </div>
                 </div>
                 <div class="row">
@@ -69,7 +64,7 @@
                         <label for="">Description</label>
                     </div>
                     <div class="col-70">
-                         <textarea name="subject" placeholder="Add more Detials If any" style="height:150px"></textarea>
+                         <textarea name="subject" placeholder="He stole all my money and ths photo down was captured by my hdden car camera" style="height:150px"></textarea>
                     </div>
                 </div>
                 <div class="row">
@@ -78,10 +73,11 @@
                     </div>
                     <div class="col-70">
                         <input type="file" name="pic" accept="image/*">
+                        <img src="../../img/2.jpeg">
                     </div>
                 </div>
                 <br>
-                <a href="home.html"  type="" name="" class="button" onclick="form()">Submit</a>
+                <a href="home.html"  type="" name="" class="button" onclick="update()">Update</a>
             </form>
 		</div>
 		<div class="footer">
