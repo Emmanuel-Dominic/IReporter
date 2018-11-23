@@ -1,0 +1,224 @@
+body{
+
+}
+
+nav{
+    background-color: rgb(0,0,0,0.7);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(0,0,0,1);
+}
+
+.active {
+    background-color: gold;
+}
+
+.logout{
+    width: 12%;
+    background: rgb(0,255,255);
+    border-radius: 4px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    padding: 1%;
+    margin: 5px;
+}
+
+.login{
+    float: right;
+}
+
+.signup{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    width: 80%;
+    position: relative;
+    border: 1px solid;
+    margin: auto;
+}
+
+input[type='search'] {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background-image: url('searchicon.png');
+    padding: 10px;
+    margin: 10px;
+    float: right;
+    border-radius: 5px;
+}
+
+input[type='search']:focus {
+    width: 40%;
+}
+
+input[type=text], input[type=email], input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+textarea{
+    width: 70%;
+}
+
+input.date{ 
+    width: 70%;
+    text-align: center;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-70 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+input[class="btn"]{
+    width: 30%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 39px;
+    text-align: center;
+    padding-left: 5px;
+    margin: 10px;
+}
+
+.button{
+    background: rgb(0,255,255);
+    width: 20%;
+    border-radius: 4px;
+    height: 39px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+
+.view{
+    background: rgb(0,255,255);
+    width: 100%;
+    border-radius: 4px;
+    height: 39px;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px;
+    margin: auto;
+}
+
+.admin{
+    background: rgb(124,252,0);
+    width: 25%;
+    border-radius: 4px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+}
+.div{
+    display: inline-block;
+}
+
+input[type="radio"]{
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 50px;
+    margin: 10px;
+    padding-left: 37px;
+}
+
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td, tr{
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+  background-color: screen;
+}
+
+th{
+  background-color: rgb(124,252,0);
+  color: white;
+}
+
+
+a{
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.news{
+    margin: auto;
+    width: 70%;
+    padding: 1%;
+}
+
+.news > ul{
+    text-align: center;
+}
