@@ -5,10 +5,12 @@
 		display: grid;
 		text-align: center;
 		grid-template-columns: repeat(12,1fr);
-		grid-template-rows: repeat(10,10%);
+		grid-template-rows: repeat(12,10%);
 		grid-template-areas: "header header header header header header header header header header header header"
 							 "nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar"
 							 "sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar"
+							 "main main main main main main main main main main main main"
+							 "main main main main main main main main main main main main"
 							 "main main main main main main main main main main main main"
 							 "main main main main main main main main main main main main"
 							 "main main main main main main main main main main main main"
@@ -22,7 +24,6 @@
 
 	.main{
 		grid-area: main;
-        padding: 1%;
 	}
 
 	.nav-bar{
@@ -84,10 +85,13 @@
         display: grid;
         text-align: center;
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(8,10%);
+        grid-template-rows: repeat(11,11%);
         grid-template-areas: "header"
                              "nav-bar"
                              "sidebar"
+                             "main"
+                             "main"
+                             "main"
                              "main"
                              "main"
                              "main"
