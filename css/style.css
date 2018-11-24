@@ -24,7 +24,7 @@ li a {
     color: white;
     font-weight: bold;
     text-align: center;
-    margin: auto;
+    margin: 10px auto;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -48,6 +48,8 @@ li a:hover:not(.active) {
     margin: 5px;
 }
 
+
+
 .login{
     float: right;
 }
@@ -59,21 +61,7 @@ li a:hover:not(.active) {
     width: 80%;
     position: relative;
     border: 1px solid;
-    margin: auto;
-}
-
-input[type='search'] {
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    background-image: url('searchicon.png');
-    padding: 10px;
-    margin: 10px;
-    float: right;
-    border-radius: 5px;
-}
-
-input[type='search']:focus {
-    width: 40%;
+    margin: 20px auto;
 }
 
 input[type=text], input[type=email], input[type=date], select, textarea {
@@ -85,17 +73,20 @@ input[type=text], input[type=email], input[type=date], select, textarea {
     resize: vertical;
 }
 
-textarea{
-    width: 70%;
-}
-
-input.date{ 
-    width: 70%;
+input.locate{
+    width: 45%;
+    margin: auto;
+    padding: 12px;
     text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
 }
 
 label {
-    padding: 12px 12px 12px 0;
+    margin-left: 20px;
+    padding: 12px 0 12px 12px;
     display: inline-block;
     font-weight: bold;
 }
@@ -157,7 +148,7 @@ input[class="btn"]{
     text-align: center;
     cursor: pointer;
     padding: 8px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .admin{
@@ -168,7 +159,6 @@ input[class="btn"]{
     text-align: center;
     cursor: pointer;
     padding: 10px;
-    margin: 0;
 }
 .div{
     display: inline-block;
@@ -204,17 +194,16 @@ th{
 a{
     text-decoration: none;
     text-align: center;
-    margin: 0;
+    margin: auto;
 }
 
 p{
-    padding: 0;
-    margin: 0;
+    margin: auto;
     text-align: center;
 }
 
 .news{
-    margin: auto;
+    margin: 20px auto;
     width: 70%;
     padding: 1%;
 }
