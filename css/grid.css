@@ -6,7 +6,8 @@
 		text-align: center;
 		grid-template-columns: repeat(12,1fr);
 		grid-template-rows: repeat(12,10%);
-		grid-template-areas: "header header header header header header header header header header header header"
+		grid-template-areas:
+		 					 "header header header header header header header header header header header header"
 							 "nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar"
 							 "sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar"
 							 "main main main main main main main main main main main main"
@@ -135,4 +136,3 @@
         margin-top: 0;
 
 }
-

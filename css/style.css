@@ -130,7 +130,8 @@ input[class="btn"]{
 }
 
 .button{
-    background: rgb(0,255,255);
+    background: rgb(0,0,0,1);
+    color: white;
     width: 20%;
     border-radius: 4px;
     height: 39px;
@@ -141,7 +142,8 @@ input[class="btn"]{
 }
 
 .view{
-    background: rgb(0,255,255);
+    background: rgb(0,0,0,1);
+    color: white;
     width: 100%;
     border-radius: 4px;
     height: 39px;
@@ -152,7 +154,7 @@ input[class="btn"]{
 }
 
 .admin{
-    background: rgb(124,252,0);
+    background: grey;
     width: 25%;
     border-radius: 4px;
     height: 20px;
