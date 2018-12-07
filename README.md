@@ -2,7 +2,7 @@
 - iReporter enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public
 
 ## Getting Started
-- [!Clone link](https://github.com/ManuelDominic/IReporter/tree/gh-pages) the project to your computer. And keep improving it.
+- Clone the project to your computer. And keep improving it. [!link](https://github.com/ManuelDominic/IReporter/tree/gh-pages)
 
 ## Project Links
 - [!Click Here](https://manueldominic.github.io/IReporter/)
