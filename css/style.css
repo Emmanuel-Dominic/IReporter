@@ -4,15 +4,13 @@ body{
 
 nav{
     background-color: rgb(0,0,0,0.7);
-    margin: 0;
-    padding: 0;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
+    padding: 10px;
+    margin: auto;
 }
 
 li {
@@ -24,7 +22,7 @@ li a {
     color: white;
     font-weight: bold;
     text-align: center;
-    margin: 10px auto;
+    margin: 8px auto;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -33,13 +31,12 @@ li a:hover:not(.active) {
     background-color: rgb(0,0,0,1);
 }
 
-.active {
-    background-color: gold;
-}
+
 
 .logout{
     width: 12%;
-    background: rgb(0,255,255);
+    background: rgb(0,0,0,1);
+    color: white;
     border-radius: 4px;
     height: 25px;
     text-align: center;
@@ -48,7 +45,14 @@ li a:hover:not(.active) {
     margin: 5px;
 }
 
-
+.Adminform{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  width: 50%;
+  border: 1px solid #3827;
+  margin: 20px auto;
+}
 
 .login{
     float: right;
@@ -59,7 +63,6 @@ li a:hover:not(.active) {
     background-color: #f2f2f2;
     padding: 15px;
     width: 80%;
-    position: relative;
     border: 1px solid;
     margin: 20px auto;
 }
@@ -73,15 +76,24 @@ input[type=text], input[type=email], input[type=date], select, textarea {
     resize: vertical;
 }
 
+input.admin{
+  background-color: #f2f2f2;
+  width: 90%;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
 input.locate{
-    width: 45%;
+    width: 40%;
     margin: auto;
     padding: 12px;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-}
 }
 
 label {
@@ -99,12 +111,15 @@ input[type=submit]:hover {
 .col-25 {
     float: left;
     width: 25%;
+    margin-right: 0;
     margin-top: 6px;
+
 }
 
 .col-70 {
     float: left;
     width: 70%;
+    margin-left: 0;
     margin-top: 6px;
 }
 
@@ -155,7 +170,9 @@ input[class="btn"]{
 
 .admin{
     background: grey;
+    color: white;
     width: 25%;
+    margin: 10px;
     border-radius: 4px;
     height: 20px;
     text-align: center;
@@ -188,7 +205,7 @@ th, td, tr{
 }
 
 th{
-  background-color: rgb(124,252,0);
+  background-color: rgb(0,0,0,0.8);
   color: white;
 }
 
