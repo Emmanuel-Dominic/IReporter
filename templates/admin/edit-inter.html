@@ -19,14 +19,13 @@
 			<h2>INTERVETION REPORT</h2>
 		</div>
 		<div class="main">
-			<form class="signup">
-                <h2><span style="color:rgb(124,252,0)">form-number</span> 266</h2>
-                <div class="row">
-                    <div class="col-25">
-                        <label>Status</label>
-                    </div>
-                    <div class="col-70">
-                        <select>
+            <form action="action.py">
+            <h2><span style="color:rgb(124,252,0)">form-number</span> 266</h2>
+            <div class="flex-container">
+                <!-- <div class="row"> -->
+                <div style="flex-grow: 1"><label>Status</label></div>
+                  <div style="flex-grow: 8">
+                  	<select>
                         	<option>Update-Status</option>
                         	<option>Rejected</option>
                         	<option>Resolved</option>
@@ -34,64 +33,38 @@
                         </select>
                     </div>
                 </div>
-                <div class="row">
-                    <img src="../../img/1.jpeg" width="20%" height="20%" style="float: left;">
+                <br>
+                <div class="flex-container">
+                    <div style="flex-grow: 1"><label>Title</label></div>
+                    <div style="flex-grow: 8"><a type="" class="text" name="" style="color:black">Road contruction</a></div>
                 </div>
-                <div class="row">
-			      	<div class="col-25">
-			        	<label>Title</label>
-			      	</div>
-			      	<div class="col-70">
-						<a type="" class="text" name="">Road Construction</a>
-			      	</div>
-			    </div><div class="row">
-			      	<div class="col-25">
-						<label>Management</label>
-			      	</div>
-			      	<div class="col-70">
-						<a type="" class="text" name="">UNRA</a>
-			      	</div>
-			    </div>
-			    <div class="row">
-			      	<div class="col-25">
-						<label>Location</label>
-			      	</div>
-			      	<div class="col-70">
-						<a type="" class="text" name="">0.39937,</a>
-						<br>
-						<a type="" class="text" name="">9.7979</a>
-			      	</div>
-			    </div>
-				<div class="row">
-			      	<div class="col-25">
-						<label>Date</label>
-			      	</div>
-			      	<div class="col-70">
-						<a type="" class="text" name="">16th/06/2018</a>
-			      	</div>
-			    </div>
-				<div class="row">
-			      	<div class="col-25">
-			        	<label for="">Description</label>
-			      	</div>
-			      	<div class="col-70">
-						<a type="" class="text" name="">Malamba Highway needs construction because it has lead many loss of lives</a>
-			      	</div>
-			    </div>
-				<div class="row">
-					<div class="col-25">
-			        	<label for="">Evidence Photo</label>
-			      	</div>
-			      	<div class="col-70">
-						<img src="../../img/2.jpeg">
-			      	</div>
-			    </div>
-				<br>
-                <a href="home.html"  type="" name="" class="button" onclick="update()">Update</a>
-            </form>
+                <br>
+                 <div class="flex-container">
+                      <div style="flex-grow: 1"><label for="adr">Location</label></div>
+                      <div style="flex-grow: 3.5"><a type="" class="text" name="" style="color:black">0.3998</a></div>
+                      <div style="flex-grow: 3.5"><a type="" class="text" name="" style="color:black">0.7898</a></div>
+                 </div>
+               <br>
+               <div class="flex-container">
+                    <div style="flex-grow: 1"><label for="adr">Date</label></div>
+                    <div style="flex-grow: 8"><a type="" class="text" name="">16th/06/2018</a></div>
+               </div>
+               <br>
+               <div class="flex-container">
+                  <div style="flex-grow: 1"><label>Description</label></div>
+                  <div style="flex-grow: 8"><a name="subject">Malamba Highway needs construction because it has lead many loss of lives</a></div>
+              </div>
+              <br>
+              <div class="flex-container">
+                  <div style="flex-grow: 1"><label>Evidence Photo</label></div>
+                  <div style="flex-grow: 8"><img src="../../img/1.jpeg"></div>
+              </div>
+              <br>
+            <a href="home.html" type="submit" value="" class="btn" onclick="update()">Update</a>
+          </form>
 		</div>
 		<div class="footer">
-			<p>Copyright@Manuel</p><a href="#">Andelaug.com</a>
+			<p>copyright @ManuelDominic <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 		</div>
 	</div>
 </body>

@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Update-form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/grid.css">
     <script src="../../js/script.js"></script>
@@ -21,64 +23,45 @@
             <h2>INTERVETION REPORT</h2>
         </div>
         <div class="main">
-            <form class="signup">
-                <h2><span style="color:rgb(124,252,0)">form-number</span> 266</h2>
-                <div class="row">
-                    <div class="col-25">
-                        <label>Title</label>
-                    </div>
-                    <div class="col-70">
-                      <a type="" class="text" name="">Road Construction</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label>Management</label>
-                    </div>
-                    <div class="col-70">
-                      <a type="" class="text" name="">UNRA</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label>Location</label>
-                    </div>
-                    <div class="col-70">
-                        <input type="" name="" class="locate" placeholder="0.39987">
-                        <input type="" name="" class="locate" placeholder="9.7979">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label>DatePicker</label>
-                    </div>
-                    <div class="col-70">
-                        <a type="" class="text" name="">08th/07/2018</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="">Description</label>
-                    </div>
-                    <div class="col-70">
-                         <textarea name="subject" placeholder="Malamba Highway needs construction because it has lead many loss of lives" style="height:150px"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="">Evidence Photo</label>
-                    </div>
-                    <div class="col-70">
-                        <input type="file" name="pic" accept="image/*">
-                        <img src="../../img/1.jpeg">
-                    </div>
+          <form action="action.py">
+            <h2><span style="color:rgb(124,252,0)">form-number</span> 266</h2>
+            <div class="flex-container">
+                <!-- <div class="row"> -->
+                <div style="flex-grow: 1"><label>Status</label></div>
+                  <div style="flex-grow: 8"><a type="" class="text" name=""><span style="color:darkblue">pending</span></a></div>
                 </div>
                 <br>
-                <a href="home.html"  type="" name="" class="button" onclick="update()">Update</a>
-            </form>
+                <div class="flex-container">
+                    <div style="flex-grow: 1"><label>Title</label></div>
+                    <div style="flex-grow: 8"><a type="" class="text" name="" style="color:black">Road contruction</a></div>
+                </div>
+                <br>
+                 <div class="flex-container">
+                      <div style="flex-grow: 1"><label for="adr">Location</label></div>
+                      <div style="flex-grow: 3.5"><input type="" class="text" name="" style="color:black" placeholder=" 0.39987" required></div>
+                      <div style="flex-grow: 3.5"><input type="" class="text" name="" style="color:black" placeholder=" 0.78987" required></div>
+                 </div>
+               <br>
+               <div class="flex-container">
+                    <div style="flex-grow: 1"><label for="adr">Date</label></div>
+                    <div style="flex-grow: 8"><a type="" class="text" name="" style="color:black">2018-01-01</a></div>
+               </div>
+               <br>
+               <div class="flex-container">
+                  <div style="flex-grow: 1"><label>Description</label></div>
+                  <div style="flex-grow: 8"><textarea name="subject" placeholder="Malamba Highway needs construction because it has lead many loss of lives" style="height:150px"  required></textarea></div>
+              </div>
+              <br>
+              <div class="flex-container">
+                  <div style="flex-grow: 1"><label>Evidence Photo</label></div>
+                  <div style="flex-grow: 8"><img src="../../img/1.jpeg"></div>
+              </div>
+              <br>
+            <a href="home.html" type="submit" value="" class="btn" onclick="update()">Update</a>
+          </form>
         </div>
         <div class="footer">
-            <p>Copyright@Manuel</p><a href="#">Andelaug.com</a>
+            <p>copyright @ManuelDominic <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
         </div>
     </div>
 </body>

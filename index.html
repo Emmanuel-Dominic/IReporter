@@ -17,74 +17,58 @@
 				<ul>
 					<li><a href="index.html">Menu</a></li>
 					<li><a href="templates/user/about.html">About</a></li>
-					<form class="login">
-						<input type="email" name="" class="btn" placeholder="Enter Email" required="">
-						<input type="text" name="" class="btn" placeholder="Enter Password" required="">
-						<a href="templates/user/home.html"  type="" name="" class="button">Submit</a>
-					</form>
+					<div class="login">
+						<form action="/action.py">
+						<input type="email" name="" class="btn" placeholder="Enter Email" required>
+						<input type="text" name="" class="btn" placeholder="Enter Password" required>
+						<a href="templates/user/home.html"  type="submit" name="" class="button">Submit</a>
+						</form>
+					</div>
 				</ul>
 			</nav>
 		</div>
 		<div class="sidebar div">
 			<h2>Welcome To IReporter</h2>
-			<a href="templates/admin/index.html" type="" name="" class="admin" style="float: right; margin-bottom:150px;">LoginAdmin</a>
 		</div>
 		<div class="main">
-			<form class="signup">
-			    <div class="row">
-			      <div class="col-25">
-			        <label for="">Full Names</label>
-			      </div>
-			      <div class="col-70">
-			        <input type="text"  name="fullname" placeholder="Enter Full Names">
-			      </div>
-			    </div>
-			    <div class="row">
-			      <div class="col-25">
-			        <label for="lname">Email</label>
-			      </div>
-			      <div class="col-70">
-			        <input type="email" name="" placeholder="Enter Email" required="">
-			      </div>
-			    </div>
-			    <div class="row">
-				    <div class="col-25">
-				        <label for="">Id-Number</label>
-				    </div>
-				    <div class="col-70">
-				        <input type="text" name="" placeholder="Enter IdNumber" required="">
-				    </div>
-				</div>
-			    <div class="row">
-			      <div class="col-25">
-			        <label for="lname">Contact Number</label>
-			      </div>
-			      <div class="col-70">
-			        <input type="text" name="" placeholder="Enter ContactNumber" required="">
-			      </div>
-			    </div>
-			    <div class="row">
-				    <div class="col-25">
-				        <label for="">Password</label>
-				    </div>
-				    <div class="col-70">
-				        <input type="text" name="" placeholder="Enter Password" required="">
-				    </div>
-				</div>
-			    <div class="row">
-			      <div class="col-25">
-			        <label for="lname">Re-Enter Password</label>
-			      </div>
-			      <div class="col-70">
-			        <input type="text" name="" placeholder="Re-Enter Password" required="">
-			      </div>
-			    </div>
-			    <br>
-			      <a href="index.html"  type="" name="" class="button" onclick="signup()">Submit</a>
-			</form>
+			<form action="/action.py" style="border:1px solid #ccc">
+		    <h1>Sign Up</h1>
+		    <hr>
+
+		    <label for="name"><b>Full Names</b></label>
+		    <input type="text" placeholder="Enter Full Names" name="name" required>
+
+		    <label for="email"><b>Email</b></label>
+		    <input type="text" placeholder="Enter Email" name="email" required>
+
+		    <label for="number"><b>Id-Number</b></label>
+		    <input type="password" placeholder="Enter Id-Number" name="psw" required>
+
+		    <label for="number"><b>Contact Number</b></label>
+		    <input type="password" placeholder="Enter Contact Number" name="psw" required>
+
+		    <label for="psw"><b>Password</b></label>
+		    <input type="password" placeholder="Enter Password" name="psw" required>
+
+		    <label for="psw-repeat"><b>Repeat Password</b></label>
+		    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+		    
+		    <label>
+		      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+		    </label>
+		    
+		    <div class="clearfix">
+		      <a href="index.html" type="submit" class="signupbtn" placeholder="">Sign Up</a>
+		      <br>
+		      <br>
+		      <br>
+		      <a href="templates/admin/index.html" type="" class="cancelbtn" value="">login as Admin</a>
+		    </div>
+		  </div>
+		</form>
 		</div>
 		<div class="footer">
-			<p>Copyright@Manuel</p><a href="#">Andelaug.com</a>
+    		<p>copyright @ManuelDominic <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 		</div>
 	</div>
 </body>
