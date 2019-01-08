@@ -34,6 +34,15 @@ form {
   padding-bottom: 10px;
 }
 
+.view_form{
+  height: 75%;
+  width: 75%;
+  margin: auto;
+  border: 1px solid;
+  border-radius: 8px;
+  /*text-align: left;*/
+}
+
 input[type=text], input[type=password],input[type=email],input[type=date] {
   width: 95%;
   padding: 12px 20px;
@@ -163,7 +172,7 @@ span.psw {
   color: black;
   width: 100px;
   margin: 5px;
-  text-align: center;
+  text-align: left;
   line-height: 40px;
   font-size: 24px;
 }
