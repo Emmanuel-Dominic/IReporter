@@ -168,7 +168,7 @@ span.psw {
 }
 
 .flex-container > div {
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   color: black;
   width: 100px;
   margin: 5px;
