@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/grid.css">
     <script src="../../js/script.js"></script>
+    <script src="../../js/maps.js"></script>
 </head>
 <body>
     <div class="container">
@@ -25,9 +26,8 @@
         </div>
         <div class="main">
           <form class="view_form" action="action.py">
-            <h2><span style="color:rgb(124,252,0)">form-number</span> 266</h2>
+            <h2><span style="color:darkgreen">form-number</span> 266</h2>
             <div class="flex-container">
-                <!-- <div class="row"> -->
                 <div style="flex-grow: 1"><label>Status</label></div>
                   <div style="flex-grow: 8"><a type="" class="text" name=""><span style="color:darkblue">pending</span></a></div>
                 </div>
@@ -41,8 +41,8 @@
                       <div style="flex-grow: 1"><label for="adr">Location</label></div>
                       <div style="flex-grow: 3.5"><input id="long" type="" class="text" name="" style="color:black" placeholder=" 0.39987" required></div>
                       <div style="flex-grow: 3.5"><input id="lat" type="" class="text" name="" style="color:black" placeholder=" 0.78987" required></div>
-                 </div>
-                 <div class="flex-container" id="myMap" style="width:100%;height:300px;">
+                </div>
+                <div class="flex-container" id="myMap" style="width:100%;height:300px;">
                     <script>
                           var myMap = L.map("myMap").setView([0.3476, 32.5825], 15);
                           L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
@@ -62,7 +62,7 @@
                               long.value += event.latlng.lng.toString();
                           });
                       </script>
-                  </div>
+                </div>
                <br>
                <div class="flex-container">
                     <div style="flex-grow: 1"><label for="adr">Date</label></div>
