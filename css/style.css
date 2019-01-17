@@ -31,16 +31,19 @@ li a:hover:not(.active) {
 
 form {
   border: 1px solid #f1f1f1;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
 }
 
+form .signup{
+  width: 50%;
+  height: 70%;
+}
 .view_form{
   height: 75%;
   width: 75%;
   margin: auto;
   border: 1px solid;
   border-radius: 8px;
-  /*text-align: left;*/
 }
 
 input[type=text], input[type=password],input[type=email],input[type=date] {
@@ -79,7 +82,6 @@ select, textarea {
   resize: vertical;
 }
 
-/* Float cancel and signup buttons and add an equal width */
 a[class=signupbtn] {
   color: white;
   padding: 14px 20px;
@@ -89,7 +91,6 @@ a[class=signupbtn] {
   width: 75%;
   background-color: green;
 }
-
 
 .imgcontainer {
   text-align: center;
@@ -120,30 +121,30 @@ span.psw {
 }
 
 .row {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox; 
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
   margin: 0 -16px;
 }
 
 .col-25 {
-  -ms-flex: 25%; /* IE10 */
+  -ms-flex: 25%; 
   flex: 25%;
 }
 
 .col-25 {
-  -ms-flex: 25%; /* IE10 */
+  -ms-flex: 25%;
   flex: 25%;
 }
 
 .col-50 {
-  -ms-flex: 50%; /* IE10 */
+  -ms-flex: 50%;
   flex: 50%;
 }
 
 .col-75 {
-  -ms-flex: 75%; /* IE10 */
+  -ms-flex: 75%;
   flex: 75%;
 }
 
@@ -164,11 +165,9 @@ span.psw {
 .flex-container {
   display: flex;
   align-items: stretch;
-  /*background-color: #f1f1f1;*/
 }
 
 .flex-container > div {
-  /*background-color: lightblue;*/
   color: black;
   width: 100px;
   margin: 5px;
